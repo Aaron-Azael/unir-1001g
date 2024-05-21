@@ -1,0 +1,6 @@
+manzana
+banana
+kiwi
+manzana
+naranja
+uva
