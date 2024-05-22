@@ -20,6 +20,9 @@ def sort_list(items, ascending=True):
 def remove_duplicates_from_list(items):
     return list(set(items))
 
+def count_items(my_list):
+    return len(my_list)
+
 
 if __name__ == "__main__":
     filename = DEFAULT_FILENAME
@@ -43,7 +46,12 @@ if __name__ == "__main__":
         print(f"El fichero {filename} no existe")
         word_list = ["ravenclaw", "gryffindor", "slytherin", "hufflepuff"]
 
+    readedWords = count_items(word_list)
+    print(f"El archivo o la lista por defecto contiene {readedWords} palabras")
+
     if remove_duplicates:
         word_list = remove_duplicates_from_list(word_list)
+    
+    print(f"El archivo o la lista por defecto contiene {readedWords} palabras luego de eliminar palabras duplicadas")
 
     print(sort_list(word_list))
